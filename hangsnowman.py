@@ -1,3 +1,7 @@
+import random
+words = ["cat", "boo", "scary", "massacre", "halloween"]
+random = random.choice(words)
+
 def hangsnowman(word):
     wrong = 0
     stages = ["",
@@ -33,7 +37,3 @@ def hangsnowman(word):
     if not win:
         print("\n".join(stages[0:e]))
         print("You lose! It was {}.".format(word))
-
-import random
-words = ["cat", "boo", "scary", "massacre", "halloween"]
-random = random.choice(words)
